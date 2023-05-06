@@ -172,7 +172,7 @@ window.addEventListener("scroll", function(elem){
 
   buttontwo.addEventListener("click",function(){
    console.log(menu)
-    menu.style.top="-100%";
+    menu.style.top="-150%";
     // menu.style.display="none";
 
   })
