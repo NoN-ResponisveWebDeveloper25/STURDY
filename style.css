@@ -119,6 +119,7 @@ body {
     font-size: 13px;
     border: none;
     background-color: rgba(0, 0, 0, 0.411);
+    
 }
 .navright{
     gap: 19px;
@@ -150,6 +151,7 @@ body {
     
     margin-bottom: 10px;
 }
+
 
 .bottomcontent>.buttons{
     gap: 15px;
@@ -1072,10 +1074,12 @@ body {
      /* -------------------PAGEONE------------------------------------------------- */
      
      .pageone{
-         width: 100%;
-         height: 100vh;
+         width: 100svw;
+         height: 100svh;
          background-color: rgba(25, 25, 25, 0.929);
          position: relative;
+         cursor: none;
+         
      }
      .pageone>video{
          width: 100%;
@@ -1100,7 +1104,7 @@ body {
      }
      .nav{
          width: 100%;
-         z-index: 99;
+         z-index: 9;
          
          
      }
@@ -1111,6 +1115,7 @@ body {
          justify-content: space-between;
          padding: 10px;
          position: fixed;
+         z-index: 999;
          
      }
 
@@ -1126,6 +1131,8 @@ body {
          font-size: 13px;
          border: none;
          background-color: rgba(0, 0, 0, 0.411);
+         backdrop-filter: invert(80%);
+        
      }
      .navright{
          gap: 19px;
@@ -1136,6 +1143,7 @@ body {
          width: 100%;
          padding: 15px;
          padding-top:10vh;
+         position: relative;
          
      }
      
@@ -1178,8 +1186,8 @@ body {
      /* -----------------PAGETWO----------------- */
      
      .pagetwo{
-         width: 100%;
-         height:40vh;
+        width: 100svw;
+        height: 40svh;
          align-items: center;
          justify-content: flex-start;
          padding-left:1vw;
@@ -1203,8 +1211,8 @@ body {
      /* ---------------------PAGETHREE--------------------- */
      
      .pagethree{
-         width: 100%;
-         height: 90vh;
+         width: 100svw;
+         height: 90svh;
          display: flex;
          position: relative;
          flex-direction: column;
@@ -1347,8 +1355,8 @@ body {
      /* ---------------------------PAGEFOUR-------------------------- */
      
      .pagefour{
-         width: 100%;
-         height: 360vh;
+         width: 100svw;
+         height: 180svh;
          display: flex;
          flex-direction: column;
          position: relative;
@@ -1356,21 +1364,21 @@ body {
      }
      .pagefour>.left{
          width: 100%;
-         height: 50%;
+         height: 100%;
          display: flex;
-         flex-direction: column;
+         /* flex-direction: column; */
      }
      
      .pagefour>.right{
          width: 100%;
-         height: 50%;
+         height: 100%;
          display: flex;
-         flex-direction: column;
+         /* flex-direction: column; */
      }
      
      .elem{
          width: 100%;
-         height: 50%;
+         height: 100%;
          
      
      }
@@ -1437,8 +1445,8 @@ body {
      
      
      .lastpage{
-         width: 100%;
-         height: 25vh;
+         width: 100svw;
+         height: 25svh;
          display: flex;
          align-items: end;
          padding: 15px;
@@ -1484,8 +1492,8 @@ body {
      
      
      .pagefive{
-         width: 100%;
-         height: 90vh;
+         width: 100svw;
+         height: 90svh;
          display: flex;
          flex-direction: column;
          position: relative;
@@ -1630,8 +1638,8 @@ body {
      /* ---------PAGESIX------------ */
      
      .pagesix{
-         width: 100%;
-         height: 100vh;
+         width: 100svw;
+         height: 100svh;
      }
      
      
@@ -1639,8 +1647,8 @@ body {
      
      
      .teen{
-         width: 100%;
-         height: 570vh;
+         width: 100svw;
+         height: 360svh;
          /* background-color: red; */
          display: flex;
          flex-direction: column-reverse;
@@ -1686,8 +1694,8 @@ body {
      
      /* -------------------------PAGESEVEN------------------ */
      .pageseven{
-         width: 100%;
-         height: 70vh;
+         width: 100svw;
+         height: 70svh;
          display: flex;
          /* background-color: red; */
          padding-left: 2vw;
@@ -1752,7 +1760,7 @@ body {
      
      .pageseven>.right>.rightbottom>.rightbottomleft>p{
          font-family: m;
-         font-size: 12px;
+         font-size:2.4vw;
          padding-bottom: 1px;
         
          font-weight: 500;
@@ -1764,7 +1772,7 @@ body {
          border: none;
          line-height: 1.3;
          font-family: m;
-         font-size: 12px;
+         font-size: 2.4vw;
          padding-bottom: 1px;
          opacity: 1;
          font-weight: 500;
@@ -1773,7 +1781,7 @@ body {
      
      .pageseven>.right>.rightbottom>.rightbottomright>p{
          font-family: m;
-         font-size: 12px;
+         font-size: 2.4vw;
          padding-bottom: 1px;
         
          font-weight: 500;
@@ -1785,7 +1793,7 @@ body {
          outline: none;
          border: none;
          font-family: m;
-         font-size: 12px;
+         font-size: 2.4vw;
          padding-bottom: 1px;
          opacity: 1;
          font-weight: 500;
@@ -1833,7 +1841,34 @@ body {
      }
      
      
+   .mobilecursor{
+    width:100px;
+    height: 100px;
+    background-color:transparent;
+    
+    position: absolute;
+    z-index: 99;
+    top: 40%;
+    border-radius: 50%;
+    backdrop-filter: invert(100%);
+   
+    animation: move 2.7s linear alternate infinite;
+   }
+   
 
+
+   @keyframes move{
+    0%{
+        left:0%;
+        
+
+    }
+
+    100%{
+        left:80%;
+    
+    }
+   }
 
 
 
